@@ -4,8 +4,7 @@ import jsonpickle
 import os
 
 # Replace the API_KEY and API_SECRET with your application's key and secret.
-#auth = tweepy.AppAuthHandler(API_KEY, API_SECRET)
-auth = tweepy.AppAuthHandler("PblA5jK88oBw9oPvkfeng", "LUHZlNOvgiNSujZqZNZ2AlYIVyGEleY5UY5TRre9g")
+auth = tweepy.AppAuthHandler(API_KEY, API_SECRET)
 
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 if (not api):
